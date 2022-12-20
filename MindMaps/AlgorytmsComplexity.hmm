@@ -1,0 +1,23 @@
+Złożoność algorytmów
+	Czasowa
+		Ilość danych wejściowych
+		Operacje arytmetyczne O(1)
+		Oznaczenia
+			Dn - Zbiór zestawów danych wejściowych o rozmiarze n
+				Zbiór wszystkich możliwych przypadków
+			t(d) - Liczba operacji dominujących dla zestawu danych wejściowych deDn
+			Xn - Zmienna losowa o wartości t(d)
+			Pnk - rozkład prawdopodobieństwa zmiennej Xn
+				Prawdopodobieństwo, że dla danych o rozmiarze n wykonamy k operacji dominujących
+		Definicje
+			Złożoność pesymistyczna
+				W(n)
+					sup {t(d): deDn}
+			Oczekiwana złożoność
+				A(n) = Suma po k >= 0 z k * pnk
+			Miara wrażliwości pesymistycznej
+				delta(n) = sup {t(d1) - t(d2): d1, d2 e Dn}
+	Notacje
+		Theta(g(n)) = {f(n): Ec1,c2,no > 0: c1 * g(n) <= f(n) <= c2 * g(n) dla n > n0}
+		O(g(n)) = {f(n): E c,n0 > 0: f(n) <= c*g(n) dla n>n0}
+		Omega(g(n)) = {f(n): E c,n0 > 0: f(n) >= c*g(n) dla n>n0}
