@@ -128,6 +128,19 @@ public:
         return END();
     }
 };
+    
+
+int Top(List list) {
+    return list.Retrieve(list.First());
+}
+
+void Pop(List list) {
+    list.Delete(list.First());
+}
+
+void Push(List list, elementtype element) {
+    list.Insert(element, list.First());
+}
 
 #include <iostream>
 int main()
